@@ -1,7 +1,7 @@
 mode: Mainline
 branches:
   develop:
-    mode: ContinuousDelivery
+    mode: mainline
     tag: alpha
     increment: Minor
     prevent-increment-of-merged-branch-version: false
@@ -13,7 +13,7 @@ branches:
     is-mainline: false
     pre-release-weight: 0
   main:
-    mode: ContinuousDelivery
+    mode: mainline
     tag: ''
     increment: Patch
     prevent-increment-of-merged-branch-version: true
@@ -27,7 +27,7 @@ branches:
     is-mainline: true
     pre-release-weight: 55000
   release:
-    mode: ContinuousDelivery
+    mode: mainline
     tag: beta
     increment: None
     prevent-increment-of-merged-branch-version: true
@@ -43,7 +43,7 @@ branches:
     is-mainline: false
     pre-release-weight: 30000
   feature:
-    mode: ContinuousDelivery
+    mode: mainline
     tag: useBranchName
     increment: Inherit
     prevent-increment-of-merged-branch-version: false
@@ -61,7 +61,7 @@ branches:
     is-mainline: false
     pre-release-weight: 30000
   pull-request:
-    mode: ContinuousDelivery
+    mode: mainline
     tag: PullRequest
     increment: Inherit
     prevent-increment-of-merged-branch-version: false
@@ -80,7 +80,7 @@ branches:
     is-mainline: false
     pre-release-weight: 30000
   hotfix:
-    mode: ContinuousDelivery
+    mode: mainline
     tag: beta
     increment: Patch
     prevent-increment-of-merged-branch-version: false
@@ -95,7 +95,7 @@ branches:
     is-mainline: false
     pre-release-weight: 30000
   support:
-    mode: ContinuousDelivery
+    mode: mainline
     tag: ''
     increment: Patch
     prevent-increment-of-merged-branch-version: true
