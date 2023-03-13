@@ -1,7 +1,7 @@
 mode: Mainline
 branches:
   develop:
-    mode: ContinuousDeployment
+    mode: ContinuousDelivery
     tag: alpha
     increment: Minor
     prevent-increment-of-merged-branch-version: false
