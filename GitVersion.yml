@@ -3,9 +3,8 @@ branches:
   main:
     regex: ^master$|^main$
     mode: ContinuousDelivery
-    tag: useBranchName
-    increment: Patch
-    prevent-increment-of-merged-branch-version: true
+    tag: ''
+    increment: Inherit
     track-merge-target: false
     source-branches: [ 'develop', 'release' ]
     tracks-release-branches: false
