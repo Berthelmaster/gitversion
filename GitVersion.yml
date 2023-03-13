@@ -1,5 +1,12 @@
 mode: Mainline
-branches: {}
+branches:
+  main:
+    regex: ^master$|^main$
+    source-branches: [ 'develop', 'release' ]
+  release:
+    regex: ^release[_-/]
+    is-release-branch: true
+
 ignore:
   sha: []
 merge-message-formats: {}
